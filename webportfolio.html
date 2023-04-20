@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+
+    <style>
+        .scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-sm fixed-top bg-light">
+        <div class="container my-2">
+            <a href="#" class="navbar-brand text-dark font-weight-bold">Viral Gupta</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+                <span class="fas fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">Home</a>
+                    <a href="#skills" class="nav-item nav-link text-dark h6 mx-3 my-auto">Skills</a>
+                    <!-- <a href="#certifications" class="nav-item nav-link text-dark h6 mx-3 my-auto">Certifications</a> -->
+                    <a href="#about" class="nav-item nav-link text-dark h6 mx-3 my-auto">About</a>
+                    <a href="#work" class="nav-item nav-link text-dark h6 mx-3 my-auto">Work</a>
+                    <a href="#contact" class="nav-item nav-link text-dark h6 mx-3 my-auto">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Title Section-->
+
+    <div class="container"
+        style="background-size: 28rem;background-image: url('https://media.istockphoto.com/id/1295630449/vector/isolated-on-white-background-medical-stethoscope.jpg?s=612x612&w=0&k=20&c=QWkpq_g_i5XZMERgcdEJ3KbuagRtAi-ykMNj44Q6GcY=');background-repeat: no-repeat;background-position: right bottom;">
+        <div class="row text-center align-items-center my-5 py-5">
+            <div class="col-12 col-md-6">
+                <img class="img-fluid mt-5"
+                    src="https://cdn4.iconfinder.com/data/icons/bzzricon-frontliners-flat/512/06_Male_Nurse-512.png"
+                    alt="Dummyimage" width="300px" height="150px">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="font-weight-light" style="font-size: 50px;font-family: 'Trebuchet MS', sans-serif;">Hi,<br>I
+                    am <span class="text-info">Viral Gupta</span></div>
+                <h4 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">A Nurse</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--Education Section-->
+    <div class="bg-white w-100">
+        <div class="container text-center my-5">
+            <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info">
+                    Education Qualifications</span></h1>
+            <div class="row my-5 pt-3" style="font-family: 'Trebuchet MS', sans-serif;font-size: 16px;">
+                <!-- <div class="col-12 col-md-4 my-2">
+                    <div>
+                        <h3>Masters of Computer Applications</h3>
+                    </div>
+                    <div>Jagran Institute of Management<br>
+                        Year : 2020-2022<br>
+                    </div>
+                </div> -->
+                <div class="col-12 col-md-6 my-2">
+                    <div>
+                        <h3>Bachelor of Science In Nursing</h3>
+                    </div>
+                    <div>Saaii College of Medical Science and Technology<br>
+                        Year : 2015-2020<br>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <div>
+                        <h3>Intermediate (XII)</h3>
+                    </div>
+                    <div>Bishambhar Nath Sanatan Dharam Inter College<br>
+                        Year : 2014-2015<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Technical Skills-->
+
+    <a name="skills"></a>
+    <div class="w-100 mt-5"
+        style="background-image: url('data:image/png;base64,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');background-repeat: no-repeat;background-size: 15rem;background-position: right bottom;">
+        <div class="container text-center py-5">
+            <h1 class="font-weight-light text-info" style="font-family: 'Trebuchet MS', sans-serif;">Services</h1>
+            <div style="font-size: 18px;" class="mb-5">Deliver by Me</div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://thumbs.dreamstime.com/b/color-medical-injection-21941863.jpg"
+                            alt="Doctor Prescribed Medications">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor Prescribed Medications</h5>
+                            <p class="card-text text-justify">Deliver Medicines to the patient by the route of Muscles
+                                and Vein.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://content.ca.healthwise.net/resources/13.3/en-ca/media/medical/hw/h9991566_001.jpg"
+                            alt="Catheterization">
+                        <div class="card-body">
+                            <h5 class="card-title">Catheterization</h5>
+                            <p class="card-text text-justify">A catheter is a flexible tube inserted into your bladder
+                                to empty it of urine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://www.wikihow.com/images/thumb/d/df/Perform-an-Enema-at-Home-Step-9-Version-4.jpg/v4-460px-Perform-an-Enema-at-Home-Step-9-Version-4.jpg"
+                            alt="Doctor Prescribed Medications">
+                        <div class="card-body">
+                            <h5 class="card-title">Enema</h5>
+                            <p class="card-text text-justify">Enemas are injections of fluids used to cleanse or
+                                stimulate the emptying of your bowel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://media.istockphoto.com/id/1323660896/vector/paramedics-assist-a-patient-in-an-ambulance.jpg?s=612x612&w=0&k=20&c=z4mLxdeIe2oPrxCuLrUTpCt4rDoRnK4jfOZbDamVaNw="
+                            alt="Nursing Assist in Ambulance">
+                        <div class="card-body">
+                            <h5 class="card-title">Nursing Assist in Ambulance</h5>
+                            <p class="card-text text-justify">Means making sure that patients are comfortable and secure
+                                at all times during transportation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFX9hDWLSDEZ8odQzltVPo07Kmqlf4Khd9DJwja5ka_tJx-gNsHAKDjmqtSu2vUtEN_ek&usqp=CAU   "
+                            alt="Vital signs monitoring">
+                        <div class="card-body">
+                            <h5 class="card-title">Vital Signs Monitoring</h5>
+                            <p class="card-text text-justify">Vital signs are useful in detecting or monitoring medical
+                                problems, these are Pulse, Respiration, BP, SpO2, Temprature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://www.wikihow.com/images/thumb/f/f0/Insert-a-Nasogastric-%28NG%29-Tube-Step-5.jpg/v4-460px-Insert-a-Nasogastric-%28NG%29-Tube-Step-5.jpg.webp"
+                            alt="ryles tube insertion and feeding">
+                        <div class="card-body">
+                            <h5 class="card-title">Ryles Tube Insertion & Feeding</h5>
+                            <p class="card-text text-justify">A thin Ryle tube is usually inserted through the nose of
+                                the patient, and goes down to the stomach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://www.wikihow.com/images/thumb/9/9a/Nebulize-a-Toddler-Step-8.jpg/v4-460px-Nebulize-a-Toddler-Step-8.jpg.webp"
+                            alt="nebulization">
+                        <div class="card-body">
+                            <h5 class="card-title">Nebulization</h5>
+                            <p class="card-text text-justify">A nebulizer is a small machine that turns liquid medicine
+                                into a mist that can be easily inhaled.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" height="200rem"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqiNW061WLWAb5SlNp7Yb-ofdwdvcasM8t3SGMUxOIntTDPWoksg46jD3I6VC0xXCstQ&usqp=CAU"
+                            alt="dressing wound care">
+                        <div class="card-body">
+                            <h5 class="card-title">Dressing Wound Care</h5>
+                            <p class="card-text text-justify">
+                                This includes considering factors that affect wound healing, and proper treatments for
+                                wound.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About me Section-->
+    <a name="about"></a>
+    <div class="bg-light mb-5">
+        <div class="container text-center py-5">
+            <h1 class="font-weight-light"><span class="text-info" style="font-family: 'Trebuchet MS', sans-serif;">About
+                </span>me</h1>
+            <div style=" font-size: 18px; text-align: center;">What I'm, A short description about me</div>
+            <div class="row pt-5 pl-5 pr-5" style="font-family: 'Trebuchet MS', sans-serif;">
+                <p class="text-justify">
+                    <b>✓ </b> I'm <b>Viral Gupta,</b>
+                    a Kanpur(Uttar Pradesh) native, is completed a bachelor degree in Nursing at Saaii college of
+                    medical science and technology. I'm committed to my work and maintain a high level of discipline and
+                    dedication. I will do all in my power to provide high level cate and services. I do work in
+                    productive manner.
+                    I resolve or report on patient needs and problems, monitor patient conditions, nurture a
+                    compassionate environment by providing psychological support.
+                    I have problem solving skills and ability to multitask and familiar with professional and technical
+                    emerging knowledge.
+                </p>
+                <p class="text-justify">
+                    <b>✓ </b>I assaure quality of care by adhering to theraputic standerds; measuring health outcomes
+                    againest patient care goals.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Work Section-->
+    <a name="work"></a>
+    <div class="container text-center my-5">
+        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info">
+                Work</span></h1>
+        <div style="font-size:18px;">Experience</div>
+        <div class="row my-5 pt-3">
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Chandani Hospital Pvt. Ltd., <br /> Kanpur</h4>
+                        </div>
+                        <div class="card-text">Intensive Care Units Nurse <br /> 6 Months </div>
+                    </div>
+                    <a href="Exp1st.pdf" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>All India Institute of Medical Science, Rishikesh</h4>
+                        </div>
+                        <div class="card-text">Intensive Care Units Nurse <br /> 10 Months </div>
+                    </div>
+                    <a href="Exp2nd.pdf" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Homi Bhabha Cancer Hospital, Varanasi</h4>
+                        </div>
+                        <div class="card-text">Intensive Care Units Nurse <br /> 6 Months </div>
+                    </div>
+                    <a href="ExperienceCertificateVIRALGUPTA.pdf" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <a name="contact"></a>
+    <footer>
+        <div class="container-fluid text-center" style="background-color: black;">
+            <div class="py-4" style="font-family: 'Trebuchet MS', sans-serif;">
+                <h2 class="text-light">Contact Me</h2>
+                <h5 class="text-muted pt-3">
+                    <!--    Phone No : --><span class="text-info"><a href="tel:+918423539353" target="_blank">+91
+                            8423539353</a></span>
+                </h5>
+                <h5 class="text-muted">
+                    <!-- Email : --><span class="text-info"><a href="mailto:viralgupta1997@gmail.com"
+                            target="_blank">viralgupta1997@gmail.com</a></span>
+                </h5>
+            </div>
+            <div>
+                <!-- <h5 class="text-light pb-3" style="font-family: 'Trebuchet MS', sans-serif;">My Linkedin profile</h5> -->
+                <!-- <a href="https://twitter.com/"><i class="fab fa-twitter-square text-light d-block h1"></i></a> -->
+                <a href="https://www.linkedin.com/in/viral-gupta-77552a23b"><i
+                        class="fab fa-linkedin-in text-light d-block h1"></i></a>
+                <!-- <a href="https://www.facebook.com/"><i class="fab fa-facebook-square text-light d-block h1"></i></a>                     -->
+            </div>
+            <div class="text-muted py-1">
+                <span id="clk"></span>
+                <p>Copyright © Viral Gupta 2023</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let clock = () => {
+            let date = new Date();
+            let hrs = date.getHours();
+            let mins = date.getMinutes();
+            let secs = date.getSeconds();
+            let period = "AM";
+            if (hrs == 0) hrs = 12;
+            else if (hrs >= 12) {
+                hrs = hrs - 12;
+                period = "PM";
+            }
+            hrs = hrs < 10 ? "0" + hrs : hrs;
+            mins = mins < 10 ? "0" + mins : mins;
+            secs = secs < 10 ? "0" + secs : secs;
+            let time = `${hrs}:${mins}:${secs} ${period}`;
+            document.getElementById("clk").innerHTML = time;
+            setTimeout(clock, 1000);
+        };
+        clock();
+    </script>
+</body>
+
+</html>
